@@ -29,5 +29,5 @@ Baloon B3 102 22 34
 JetPlane J2 11 99 768
 Helicopter H4 223 23 54
 ```
-UML Diagram
+### UML Diagram
 <img align="left"  src="https://github.com/liderako/avaj-launcher/blob/master/resource/avaj_uml.jpg" width="125%" />

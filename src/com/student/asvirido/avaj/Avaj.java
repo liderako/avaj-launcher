@@ -1,6 +1,7 @@
 package com.student.asvirido.avaj;
 
 import com.student.asvirido.avaj.Coordinates;
+import com.student.asvirido.avaj.*;
 import static java.lang.System.*;
 
 class Avaj {

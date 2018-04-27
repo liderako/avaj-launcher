@@ -1,4 +1,4 @@
-package com.student.asvirido.avaj;
+package com.student.asvirido.avaj.tower;
 
 class Tower {
 	private observers Flyable; // на UML диаграме показано Flyable* что это?????

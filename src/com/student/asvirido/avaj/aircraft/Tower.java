@@ -6,11 +6,13 @@ public class Tower {
 	private ArrayList<Flyable> observers = new ArrayList<Flyable>();
 	
 	public void register(Flyable flyable) {
-		System.out.printf("register\n");
+		observers.add(flyable);
+		System.out.printf("register tower\n");
 	}
 
 	public void unregister(Flyable flyable) {
-		System.out.printf("unregister\n");
+		observers.remove(flyable);
+		System.out.printf("unregister tower\n");
 	}
 
 	protected void conditionsChandeg() {

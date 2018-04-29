@@ -17,7 +17,12 @@ class Avaj {
 			exit(0);
 		}
 		AircraftFactory factory = new AircraftFactory();
-		System.out.printf(readFile("start.sh"));
+		try {
+			System.out.printf(readFile(args[0]));
+		}
+		catch(IOException e) {
+			System.out.printf("Error file\n");
+		}
 		// Flyable a = null;
 		// a = factory.newAircraft("JetPlane", "LGF122", 100, 100, 100);
 		// a.registerTower(tower);
@@ -26,7 +31,7 @@ class Avaj {
 
 	private static String readFile(String filename) throws IOException {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+			BufferedReader br = new BufferedReader(new FileReader(filename));
 			StringBuilder sb = new StringBuilder();
     		String line = br.readLine();
    		 	
@@ -40,7 +45,7 @@ class Avaj {
     		return (everyThing);
 		}
 		catch(FileNotFoundException e) {
-			return (null);
+			return ("null");
 		}
 	}
 }

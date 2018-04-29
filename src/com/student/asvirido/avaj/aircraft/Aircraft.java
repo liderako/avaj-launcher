@@ -1,8 +1,8 @@
 package com.student.asvirido.avaj.aircraft;
 
-import com.student.asvirido.avaj.Coordinates;
+import com.student.asvirido.avaj.aircraft.Coordinates;
 
-class Aircraft {
+public class Aircraft {
 	protected 	long id;
 	protected 	String name;
 	protected 	Coordinates coordinates;
@@ -14,6 +14,7 @@ class Aircraft {
 	}
 
 	private long nextId() {
-		this.idCounter += 1;
+		return (this.idCounter += 1);
+		// this.idCounter += 1;
 	}
 }

@@ -1,6 +1,5 @@
-package com.student.asvirido.avaj;
-
-class Coordinates {
+package com.student.asvirido.avaj.aircraft;
+public class Coordinates {
 	private int longitude;
 	private int latitude;
 	private int height;

@@ -1,6 +1,6 @@
-package com.student.asvirido.avaj;
+package com.student.asvirido.avaj.aircraft;
 
-import com.student.asvirido.avaj.WeatherTower;
+import com.student.asvirido.avaj.aircraft.WeatherTower;
 
 public interface Flyable {
 	void updateConditions();

@@ -7,9 +7,9 @@ import com.student.asvirido.avaj.aircraft.WeatherTower;
 
 import static java.lang.System.*;
 
-public class Helicopter extends Aircraft implements Flyable {
+public class JetPlane extends Aircraft implements Flyable {
 
-	Helicopter(String name, Coordinates coordinates) {
+	JetPlane(String name, Coordinates coordinates) {
 		super(name, coordinates);
 	}
 

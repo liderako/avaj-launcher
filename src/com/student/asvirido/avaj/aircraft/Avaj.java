@@ -1,51 +1,36 @@
 package com.student.asvirido.avaj.aircraft;
 
 import com.student.asvirido.avaj.aircraft.*;
+import com.student.asvirido.avaj.*;
 import static java.lang.System.*;
-import java.io.File;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.FileNotFoundException;
+import java.io.*;
+
 class Avaj {
 	public static void main(String [] args) throws IOException {
-
-		WeatherTower tower = new WeatherTower();
+		FileManager managerFile = new FileManager();
+		String fileBuffer = null;
+		Validation managerValidation = new Validation();
 
 		if (args.length != 1) {
-			out.printf("Need one args, filename\n");
-			exit(0);
+			out.printf("Need one args, fileName\n");
+			exit(-1);
 		}
-		AircraftFactory factory = new AircraftFactory();
 		try {
-			System.out.printf(readFile(args[0]));
+			fileBuffer = managerFile.readFile(args[0]);
 		}
-		catch(IOException e) {
-			System.out.printf("Error file\n");
+		catch(FileNotFoundException e) {
+			exit(-1);
 		}
+		managerValidation.run(fileBuffer);
+		managerFile.closeFile();
+
+		// System.out.println("25".matches("\\d+"));
+		// writerFile("test", this.filename);
+		// WeatherTower tower = new WeatherTower();
+		// AircraftFactory factory = new AircraftFactory();
 		// Flyable a = null;
 		// a = factory.newAircraft("JetPlane", "LGF122", 100, 100, 100);
 		// a.registerTower(tower);
 		// tower.unregister(a);
-	}
-
-	private static String readFile(String filename) throws IOException {
-		try {
-			BufferedReader br = new BufferedReader(new FileReader(filename));
-			StringBuilder sb = new StringBuilder();
-    		String line = br.readLine();
-   		 	
-   		 	while (line != null) {
-        		sb.append(line);
-        		sb.append(System.lineSeparator());
-        		line = br.readLine();
-    		}
-    		String everyThing = sb.toString();
-    		br.close();
-    		return (everyThing);
-		}
-		catch(FileNotFoundException e) {
-			return ("null");
-		}
 	}
 }

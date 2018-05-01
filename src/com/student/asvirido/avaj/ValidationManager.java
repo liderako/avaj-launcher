@@ -48,12 +48,6 @@ public class ValidationManager {
 				if ((res[j].matches("[0-9]+")) == false) {
 					error("Error: invalid digital in LONGITUDE or LATITUDE or HEIGHT");
 				}
-				else if (j == 4) {
-					int n = Integer.parseInt(res[j]);
-					if (n < 0 || n > 100) {
-						error("Error: invalid digital in HEIGHT. Limit [0-100]");
-					}
-				}
 			}
 		}
 	}

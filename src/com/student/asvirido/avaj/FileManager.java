@@ -3,16 +3,16 @@ import java.io.*;
 
 public class FileManager {
 	private String fileName;
-	private FileWriter writer;
+	private static FileWriter writer;
 
-	public FileManager(String fileName) {
-		this.fileName = fileName;
-		try {
-			createWriter();
-		} catch(IOException e) {
-			return ;
-		}
-	}
+	// public FileManager(String fileName) {
+	// 	this.fileName = fileName;
+	// 	try {
+	// 		createWriter();
+	// 	} catch(IOException e) {
+	// 		return ;
+	// 	}
+	// }
 
 	public FileManager() {
 		this.fileName = "simulation.txt";
@@ -42,10 +42,9 @@ public class FileManager {
 		}
 	}
 
-	public void writeFile(String line) throws IOException {
+	public static void writeFile(String line) throws IOException {
 		try {
-			this.writer.write(line);
-			this.writer.flush();
+			writer.write(line);
 		} catch(IOException ex){
 			System.out.println("Error writeFile\n");
 			throw new IOException();
@@ -54,7 +53,7 @@ public class FileManager {
 
 	public void closeFile() throws IOException {
 		try {
-			this.writer.close();
+			writer.close();
 		} catch(IOException ex){
 			System.out.println("Error closeFile\n");
 			throw new IOException();
@@ -63,7 +62,7 @@ public class FileManager {
 
 	private void createWriter() throws IOException {
 		try {
-			this.writer = new FileWriter(this.fileName, false);
+			writer = new FileWriter(this.fileName, false);
 		} catch(IOException e) {
 			System.out.println("Error createWriter\n");
 			throw new IOException();

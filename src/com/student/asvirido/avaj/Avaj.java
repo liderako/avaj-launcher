@@ -8,6 +8,7 @@ import static java.lang.System.*;
 import java.io.*;
 
 class Avaj {
+	
 	public static void main(String [] args) throws IOException {
 		FileManager managerFile = new FileManager();
 		String fileBuffer = null;
@@ -27,7 +28,7 @@ class Avaj {
 		}
 		managerValidation.run(fileBuffer);
 		managerConvert = new ConvertManager(fileBuffer);
-		WeatherTower tower = new WeatherTower();
+		WeatherTower tower = new WeatherTower(managerConvert.getLife());
 		AircraftFactory factory = new AircraftFactory();
 		Flyable a = null;
 		
@@ -36,16 +37,7 @@ class Avaj {
 			a = factory.newAircraft(managerConvert.getTypeLine(), managerConvert.getNameLine(), managerConvert.getLongitudeLine(), managerConvert.getLatitudeLine(), managerConvert.getHeightLine());
 			a.registerTower(tower);
 		}
-
-		// System.out.printf("Life %d\n", managerConvert.getLife());
-		// for (int i = 1; i < managerConvert.length(); i++) {
-			// managerConvert.nextLine();
-			// System.out.printf("Type: %s, Name: %s, Long: %d, Latitude %d, Height: %d\n", managerConvert.getTypeLine(), managerConvert.getNameLine(), managerConvert.getLongitudeLine(), managerConvert.getLatitudeLine(), managerConvert.getHeightLine());
-		// }
-		
+		tower.runSimulation();
 		managerFile.closeFile();
-		// a = factory.newAircraft("JetPlane", "LGF122", 100, 100, 100);
-		// a.registerTower(tower);
-		// tower.unregister(a);
 	}
 }

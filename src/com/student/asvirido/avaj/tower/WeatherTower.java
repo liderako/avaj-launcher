@@ -2,15 +2,31 @@ package com.student.asvirido.avaj.tower;
 
 import com.student.asvirido.avaj.tower.Tower;
 import com.student.asvirido.avaj.aircraft.factory.Coordinates;
+import com.student.asvirido.avaj.aircraft.factory.WeatherProvider;
 
 public class WeatherTower extends Tower {
+	private int life;
+	
+	public WeatherTower() {
+
+	}
+
+	public WeatherTower(int life) {
+		this.life = life;
+	}
 
 	public String getWeather(Coordinates cord) {
-		System.out.printf("getWeather\n");
-		return ("return getWeather\n");
+		return (WeatherProvider.getProvider().getCurrentWeather(cord));
 	}
 
 	void changeWeather() {
-		System.out.printf("changeWeather\n");
+		conditionsChandeg();
+	}
+
+	public void runSimulation() {
+		while (this.life > 0) {
+			changeWeather();
+			this.life -= 1;
+		}
 	}
 }

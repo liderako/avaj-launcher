@@ -43,6 +43,9 @@ public class ConvertManager {
 		return (Integer.parseInt(this.line[3]));
 	}
 	public int getHeightLine() {
-		return (Integer.parseInt(this.line[4]));
+		int res = Integer.parseInt(this.line[4]);
+		if (res > 100)
+			res = 100;
+		return (res);
 	}
 }

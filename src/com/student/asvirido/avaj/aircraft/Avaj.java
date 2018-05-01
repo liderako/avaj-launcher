@@ -19,6 +19,7 @@ class Avaj {
 			fileBuffer = managerFile.readFile(args[0]);
 		}
 		catch(FileNotFoundException e) {
+			out.println("FileNotFoundException");
 			exit(-1);
 		}
 		managerValidation.run(fileBuffer);

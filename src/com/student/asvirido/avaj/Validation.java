@@ -2,11 +2,6 @@ package com.student.asvirido.avaj;
 import java.io.*;
 
 public class Validation {
-	// String[3] typeValid;
-
-	public Validation() {
-		// this.typeValid = {"JetPlane", "Helicopter", "Baloon"};
-	}
 
 	public void run(String buffer) {
 		String resSplit[] = buffer.split("\n", 0);
@@ -32,7 +27,6 @@ public class Validation {
 	}
 	private void checkContainer(String buffer[]) {
 		String typeValid[] = {"JetPlane", "Helicopter", "Baloon"};
-
 		for (int i = 1; i < buffer.length; i++) {
 			String res[] = buffer[i].split(" ");
 			if (res.length != 5) {
@@ -46,12 +40,19 @@ public class Validation {
 					error("Error: wrong type");
 				}
 			}
+			
 			if ((res[1].matches("[A-Z_a-z_0-9]+")) == false) {
 				error("Error: wrong name");
 			}
 			for (int j = 2; j < 5; j++) {
 				if ((res[j].matches("[0-9]+")) == false) {
 					error("Error: invalid digital in LONGITUDE or LATITUDE or HEIGHT");
+				}
+				else if (j == 4) {
+					int n = Integer.parseInt(res[j]);
+					if (n < 0 || n > 100) {
+						error("Error: invalid digital in HEIGHT. Limit [0-100]");
+					}
 				}
 			}
 		}

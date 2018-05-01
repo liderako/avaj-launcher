@@ -1,7 +1,7 @@
 package com.student.asvirido.avaj;
 import java.io.*;
 
-public class Validation {
+public class ValidationManager {
 
 	public void run(String buffer) {
 		String resSplit[] = buffer.split("\n", 0);

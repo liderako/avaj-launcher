@@ -7,7 +7,7 @@ public class Tower {
 	
 	public void register(Flyable flyable) {
 		observers.add(flyable);
-		System.out.printf("register tower\n");
+		System.out.printf("[register tower\n");
 	}
 
 	public void unregister(Flyable flyable) {

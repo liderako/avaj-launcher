@@ -14,11 +14,12 @@ public class Baloon extends Aircraft implements Flyable {
 	}
 
 	public void updateConditions() {
-		out.printf("updateConditions\n");
+		out.printf("updateConditions Baloon\n");
 	}
 
 	public void registerTower(WeatherTower weatherTower) {
-		out.printf("registerTower\n");
+		weatherTower.register(this);
+		out.printf("registerTower Baloon\n");
 	}
 	public String getName() {
 		return (this.name);

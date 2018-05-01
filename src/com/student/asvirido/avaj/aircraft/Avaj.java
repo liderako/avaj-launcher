@@ -9,7 +9,8 @@ class Avaj {
 	public static void main(String [] args) throws IOException {
 		FileManager managerFile = new FileManager();
 		String fileBuffer = null;
-		Validation managerValidation = new Validation();
+		ValidationManager managerValidation = new ValidationManager();
+		ConvertManager managerConvert;
 
 		if (args.length != 1) {
 			out.printf("Need one args, fileName\n");
@@ -23,13 +24,24 @@ class Avaj {
 			exit(-1);
 		}
 		managerValidation.run(fileBuffer);
-		managerFile.closeFile();
+		managerConvert = new ConvertManager(fileBuffer);
+		WeatherTower tower = new WeatherTower();
+		AircraftFactory factory = new AircraftFactory();
+		Flyable a = null;
+		
+		for (int i = 1; i < managerConvert.length(); i++) {
+			managerConvert.nextLine();
+			a = factory.newAircraft(managerConvert.getTypeLine(), managerConvert.getNameLine(), managerConvert.getLongitudeLine(), managerConvert.getLatitudeLine(), managerConvert.getHeightLine());
+			a.registerTower(tower);
+		}
 
-		// System.out.println("25".matches("\\d+"));
-		// writerFile("test", this.filename);
-		// WeatherTower tower = new WeatherTower();
-		// AircraftFactory factory = new AircraftFactory();
-		// Flyable a = null;
+		// System.out.printf("Life %d\n", managerConvert.getLife());
+		// for (int i = 1; i < managerConvert.length(); i++) {
+			// managerConvert.nextLine();
+			// System.out.printf("Type: %s, Name: %s, Long: %d, Latitude %d, Height: %d\n", managerConvert.getTypeLine(), managerConvert.getNameLine(), managerConvert.getLongitudeLine(), managerConvert.getLatitudeLine(), managerConvert.getHeightLine());
+		// }
+		
+		managerFile.closeFile();
 		// a = factory.newAircraft("JetPlane", "LGF122", 100, 100, 100);
 		// a.registerTower(tower);
 		// tower.unregister(a);

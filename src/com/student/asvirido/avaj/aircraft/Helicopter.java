@@ -14,12 +14,14 @@ public class Helicopter extends Aircraft implements Flyable {
 	}
 
 	public void updateConditions() {
-		out.printf("updateConditions\n");
+		out.printf("updateConditions Helicopter\n");
 	}
 
 	public void registerTower(WeatherTower weatherTower) {
-		out.printf("registerTower\n");
+		weatherTower.register(this);
+		out.printf("registerTower Helicopter\n");
 	}
+
 	public String getName() {
 		return (this.name);
 	}

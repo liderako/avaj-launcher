@@ -14,7 +14,7 @@ public class JetPlane extends Aircraft implements Flyable {
 	}
 
 	public void updateConditions() {
-		out.printf("updateConditions\n");
+		out.printf("updateConditions JetPlane\n");
 	}
 
 	public void registerTower(WeatherTower weatherTower) {

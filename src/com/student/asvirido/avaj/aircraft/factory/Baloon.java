@@ -1,9 +1,9 @@
-package com.student.asvirido.avaj.aircraft;
+package com.student.asvirido.avaj.aircraft.factory;
 
 import com.student.asvirido.avaj.aircraft.Aircraft;
 import com.student.asvirido.avaj.aircraft.Flyable;
-import com.student.asvirido.avaj.aircraft.Coordinates;
-import com.student.asvirido.avaj.aircraft.WeatherTower;
+import com.student.asvirido.avaj.aircraft.factory.Coordinates;
+import com.student.asvirido.avaj.tower.WeatherTower;
 
 import static java.lang.System.*;
 
@@ -19,9 +19,6 @@ public class Baloon extends Aircraft implements Flyable {
 
 	public void registerTower(WeatherTower weatherTower) {
 		weatherTower.register(this);
-		out.printf("registerTower Baloon\n");
-	}
-	public String getName() {
-		return (this.name);
+		System.out.printf("%s%s%s%s%d%s", "Tower Says: ", "Baloon#", this.name, "(", this.id, ") registered to weather tower.\n");
 	}
 }

@@ -1,7 +1,7 @@
-package com.student.asvirido.avaj.aircraft;
+package com.student.asvirido.avaj.tower;
 
-import com.student.asvirido.avaj.aircraft.Tower;
-import com.student.asvirido.avaj.aircraft.Coordinates;
+import com.student.asvirido.avaj.tower.Tower;
+import com.student.asvirido.avaj.aircraft.factory.Coordinates;
 
 public class WeatherTower extends Tower {
 

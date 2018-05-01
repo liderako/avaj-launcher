@@ -1,4 +1,4 @@
-package com.student.asvirido.avaj.aircraft;
+package com.student.asvirido.avaj.aircraft.factory;
 public class Coordinates {
 	private int longitude;
 	private int latitude;

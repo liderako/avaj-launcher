@@ -1,6 +1,6 @@
 package com.student.asvirido.avaj.aircraft;
 
-import com.student.asvirido.avaj.aircraft.Coordinates;
+import com.student.asvirido.avaj.aircraft.factory.Coordinates;
 
 public class Aircraft {
 	protected 	long id;

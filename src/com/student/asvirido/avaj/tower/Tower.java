@@ -1,13 +1,14 @@
-package com.student.asvirido.avaj.aircraft;
+package com.student.asvirido.avaj.tower;
 
 import com.student.asvirido.avaj.aircraft.Flyable;
 import java.util.ArrayList;
+
 public class Tower {
 	private ArrayList<Flyable> observers = new ArrayList<Flyable>();
 	
 	public void register(Flyable flyable) {
 		observers.add(flyable);
-		System.out.printf("[register tower\n");
+		// System.out.println("Tower Says:", );
 	}
 
 	public void unregister(Flyable flyable) {

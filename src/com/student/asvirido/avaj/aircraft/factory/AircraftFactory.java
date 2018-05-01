@@ -1,10 +1,14 @@
-package com.student.asvirido.avaj.aircraft;
+package com.student.asvirido.avaj.aircraft.factory;
 
+/* Import planes */
+
+import com.student.asvirido.avaj.aircraft.factory.JetPlane;
+import com.student.asvirido.avaj.aircraft.factory.Helicopter;
+import com.student.asvirido.avaj.aircraft.factory.Baloon;
+
+/* Another imports  */
+import com.student.asvirido.avaj.aircraft.factory.Coordinates;
 import com.student.asvirido.avaj.aircraft.Flyable;
-import com.student.asvirido.avaj.aircraft.JetPlane;
-import com.student.asvirido.avaj.aircraft.Helicopter;
-import com.student.asvirido.avaj.aircraft.Baloon;
-import com.student.asvirido.avaj.aircraft.Coordinates;
 
 public class AircraftFactory {
 

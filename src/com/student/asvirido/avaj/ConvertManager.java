@@ -12,7 +12,6 @@ public class ConvertManager {
 		this.countLine = 1;
 		this.maps = maps.split("\n", 0);
 		this.life = Integer.parseInt(this.maps[0]);
-	//	this.line = this.maps[1].split(" ", 0);
 	}
 
 	public int getLife() {

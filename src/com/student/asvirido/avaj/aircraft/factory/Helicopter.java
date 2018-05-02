@@ -4,11 +4,13 @@ import com.student.asvirido.avaj.aircraft.Aircraft;
 import com.student.asvirido.avaj.aircraft.Flyable;
 import com.student.asvirido.avaj.aircraft.factory.Coordinates;
 import com.student.asvirido.avaj.tower.WeatherTower;
-
+import com.student.asvirido.avaj.FileManager;
+import java.io.*;
 import static java.lang.System.*;
 
 public class Helicopter extends Aircraft implements Flyable {
 	private WeatherTower tower;
+
 	Helicopter(String name, Coordinates coordinates) {
 		super(name, coordinates);
 	}
@@ -20,32 +22,59 @@ public class Helicopter extends Aircraft implements Flyable {
 		int height = this.coordinates.getHeight();
 
 		if ((weather.equals("snow")) == true ) {
-			say();
-			System.out.println("My rotor is going to freeze!");
 			height -= 12;
+			if (height <= 0)
+				height = 0;
+			String s = "Helicopter#" + this.name + "(" + this.id + ") My rotor is going to freeze!";
+			s = s + " Longitude: " + longitude + " Latitude: " + latitude + " Height: " + height + "\n";
+			try {
+				FileManager.writeFile(s);
+			} catch(IOException e) {
+				System.out.println(e.getMessage());
+			}
 		}
 		else if ((weather.equals("rain")) == true ) {
-			say();
-			System.out.println("Damn you rain! You messed up my baloon.");
 			longitude += 5;
+			String s = "Helicopter#" + this.name + "(" + this.id + ") Damn you rain!";
+			s = s + " Longitude: " + longitude + " Latitude: " + latitude + " Height: " + height + "\n";
+			try {
+				FileManager.writeFile(s);
+			} catch(IOException e) {
+			}
 		}
 		else if ((weather.equals("sun")) == true ) {
-			say();
-			System.out.println("This is hot.");
 			longitude += 10;
 			height += 2;
+			if (height >= 100)
+				height = 100;
+			String s = "Helicopter#" + this.name + "(" + this.id + ") This is hot.";
+			s = s + " Longitude: " + longitude + " Latitude: " + latitude + " Height: " + height + "\n";
+			try {
+				FileManager.writeFile(s);
+			} catch(IOException e) {
+				System.out.println(e.getMessage());
+			}
 		}
 		else if ((weather.equals("fog")) == true ) {
-			say();
-			System.out.println("OMG, again fog");
 			longitude += 1;
+			String s = "Helicopter#" + this.name + "(" + this.id + ") OMG, again fog.";
+			s = s + " Longitude: " + longitude + " Latitude: " + latitude + " Height: " + height + "\n";
+			try {
+				FileManager.writeFile(s);
+			} catch(IOException e) {
+				System.out.println(e.getMessage());
+			}
 		}
 		if (height <= 0) {
-			say();
-			System.out.printf("%s%d%s%d%s","landing. Longitude: ", this.coordinates.getLongitude(), " Latitude: ", this.coordinates.getLatitude(), "\n");
-			this.tower .unregister(this);
 			height = 0;
-			System.out.printf("%s%s%s%s%d%s", "Tower Says: ", "Helicopter#", this.name, "(", this.id, ") unregistered from weather tower.\n");
+			String s = "Helicopter#" + this.name + "(" + this.id + ") " + "landing. Longitude: " + longitude + " Latitude: " + latitude
+			+ " Height: " + height + "\n" + "Tower Says: " + "Helicopter#" + this.name + "(" + this.id + ") unregistered from weather tower.\n";
+			this.tower.unregister(this);
+			try {
+				FileManager.writeFile(s);
+			} catch(IOException e) {
+				System.out.println(e.getMessage());
+			}
 		}
 		this.coordinates = new Coordinates(longitude, latitude, height);
 	}
@@ -53,10 +82,11 @@ public class Helicopter extends Aircraft implements Flyable {
 	public void registerTower(WeatherTower weatherTower) {
 		this.tower = weatherTower;
 		this.tower.register(this);
-		System.out.printf("%s%s%s%s%d%s", "Tower Says: ", "Helicopter#", this.name, "(", this.id, ") registered to weather tower.\n");
-	}
-
-	private void say() {
-		System.out.printf("%s%s%s%d%s", "Helicopter#", this.name, "(", this.id, ") " );
+		String s = "Tower Says: " + "Helicopter#" + this.name + "(" +  this.id + ") registered to weather tower.\n";
+		try {
+			FileManager.writeFile(s);
+		} catch(IOException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }

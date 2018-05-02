@@ -24,6 +24,11 @@ public class ValidationManager {
 				error("Error: small life count");
 			}
 		}
+		try {
+			int n = Integer.parseInt(line);
+		} catch(NumberFormatException e) {
+			error("Error: invalid digital in count life");
+		}
 	}
 	private void checkContainer(String buffer[]) {
 		String typeValid[] = {"JetPlane", "Helicopter", "Baloon"};
@@ -40,13 +45,19 @@ public class ValidationManager {
 					error("Error: wrong type");
 				}
 			}
-			
 			if ((res[1].matches("[A-Z_a-z_0-9]+")) == false) {
 				error("Error: wrong name");
 			}
 			for (int j = 2; j < 5; j++) {
 				if ((res[j].matches("[0-9]+")) == false) {
 					error("Error: invalid digital in LONGITUDE or LATITUDE or HEIGHT");
+				}
+ 				else {
+					try {
+						int n = Integer.parseInt(res[j]);
+					} catch(NumberFormatException e) {
+						error("Error: invalid digital in LONGITUDE or LATITUDE or HEIGHT");
+					}
 				}
 			}
 		}

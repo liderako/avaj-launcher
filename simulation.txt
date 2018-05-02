@@ -1,1 +1,161 @@
 Tower Says: Baloon#B1(1) registered to weather tower.
+Tower Says: Baloon#B2(2) registered to weather tower.
+Tower Says: JetPlane#J1(3) registered to weather tower.
+Tower Says: Helicopter#H1(4) registered to weather tower.
+Tower Says: Helicopter#H2(5) registered to weather tower.
+Tower Says: Helicopter#H3(6) registered to weather tower.
+Tower Says: Baloon#B3(7) registered to weather tower.
+Tower Says: JetPlane#J2(8) registered to weather tower.
+Tower Says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1) Damn you rain! You messed up my baloon. Longitude: 2 Latitude: 3 Height: 15
+Baloon#B2(2) OMG, again fog. Longitude: 1 Latitude: 8 Height: 63
+JetPlane#J1(3) Let's enjoy the good weather and take some pics. Longitude: 23 Latitude: 54 Height: 34
+Helicopter#H1(4) OMG, again fog. Longitude: 655 Latitude: 33 Height: 20
+Helicopter#H2(5) My rotor is going to freeze! Longitude: 22 Latitude: 33 Height: 32
+Helicopter#H3(6) This is hot. Longitude: 108 Latitude: 68 Height: 100
+Baloon#B3(7) It's snowing. We're gonna crash. Longitude: 102 Latitude: 22 Height: 19
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 109 Height: 100
+Helicopter#H4(9) OMG, again fog. Longitude: 224 Latitude: 23 Height: 54
+Baloon#B1(1) It's snowing. We're gonna crash. Longitude: 2 Latitude: 3 Height: 0
+Baloon#B1(1) landing. Longitude: 2 Latitude: 3 Height: 0
+Tower Says: Baloon#B1(1) unregistered from weather tower.
+JetPlane#J1(3) Let's enjoy the good weather and take some pics. Longitude: 23 Latitude: 64 Height: 36
+Helicopter#H1(4) This is hot. Longitude: 665 Latitude: 33 Height: 22
+Helicopter#H2(5) OMG, again fog. Longitude: 23 Latitude: 33 Height: 32
+Helicopter#H3(6) This is hot. Longitude: 118 Latitude: 68 Height: 100
+Baloon#B3(7) It's snowing. We're gonna crash. Longitude: 102 Latitude: 22 Height: 4
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 119 Height: 100
+Helicopter#H4(9) OMG, again fog. Longitude: 225 Latitude: 23 Height: 54
+Baloon#B2(2) Damn you rain! You messed up my baloon. Longitude: 1 Latitude: 8 Height: 58
+JetPlane#J1(3) OMG! Winter is coming! Longitude: 23 Latitude: 64 Height: 29
+Helicopter#H1(4) Damn you rain! Longitude: 670 Latitude: 33 Height: 22
+Helicopter#H2(5) My rotor is going to freeze! Longitude: 23 Latitude: 33 Height: 20
+Helicopter#H3(6) OMG, again fog. Longitude: 119 Latitude: 68 Height: 100
+Baloon#B3(7) OMG, again fog. Longitude: 102 Latitude: 22 Height: 1
+JetPlane#J2(8) Damn you rain! Longitude: 11 Latitude: 124 Height: 100
+Helicopter#H4(9) OMG, again fog. Longitude: 226 Latitude: 23 Height: 54
+Baloon#B2(2) It's snowing. We're gonna crash. Longitude: 1 Latitude: 8 Height: 43
+JetPlane#J1(3) Damn you rain! Longitude: 23 Latitude: 69 Height: 29
+Helicopter#H1(4) This is hot. Longitude: 680 Latitude: 33 Height: 24
+Helicopter#H2(5) This is hot. Longitude: 33 Latitude: 33 Height: 22
+Helicopter#H3(6) This is hot. Longitude: 129 Latitude: 68 Height: 100
+Baloon#B3(7) OMG, again fog. Longitude: 102 Latitude: 22 Height: 0
+Baloon#B3(7) landing. Longitude: 102 Latitude: 22 Height: 0
+Tower Says: Baloon#B3(7) unregistered from weather tower.
+Helicopter#H4(9) Damn you rain! Longitude: 231 Latitude: 23 Height: 54
+Baloon#B2(2) Let's enjoy the good weather and take some pics. Longitude: 3 Latitude: 8 Height: 47
+JetPlane#J1(3) OMG! Winter is coming! Longitude: 23 Latitude: 69 Height: 22
+Helicopter#H1(4) OMG, again fog. Longitude: 681 Latitude: 33 Height: 24
+Helicopter#H2(5) Damn you rain! Longitude: 38 Latitude: 33 Height: 22
+Helicopter#H3(6) Damn you rain! Longitude: 134 Latitude: 68 Height: 100
+JetPlane#J2(8) Damn you rain! Longitude: 11 Latitude: 129 Height: 100
+Helicopter#H4(9) Damn you rain! Longitude: 236 Latitude: 23 Height: 54
+Baloon#B2(2) Damn you rain! You messed up my baloon. Longitude: 3 Latitude: 8 Height: 42
+JetPlane#J1(3) Damn you rain! Longitude: 23 Latitude: 74 Height: 22
+Helicopter#H1(4) This is hot. Longitude: 691 Latitude: 33 Height: 26
+Helicopter#H2(5) This is hot. Longitude: 48 Latitude: 33 Height: 24
+Helicopter#H3(6) My rotor is going to freeze! Longitude: 134 Latitude: 68 Height: 88
+JetPlane#J2(8) Damn you rain! Longitude: 11 Latitude: 134 Height: 100
+Helicopter#H4(9) OMG, again fog. Longitude: 237 Latitude: 23 Height: 54
+Baloon#B2(2) Let's enjoy the good weather and take some pics. Longitude: 5 Latitude: 8 Height: 46
+JetPlane#J1(3) Damn you rain! Longitude: 23 Latitude: 79 Height: 22
+Helicopter#H1(4) OMG, again fog. Longitude: 692 Latitude: 33 Height: 26
+Helicopter#H2(5) My rotor is going to freeze! Longitude: 48 Latitude: 33 Height: 12
+Helicopter#H3(6) Damn you rain! Longitude: 139 Latitude: 68 Height: 88
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 144 Height: 100
+Helicopter#H4(9) Damn you rain! Longitude: 242 Latitude: 23 Height: 54
+Baloon#B2(2) OMG, again fog. Longitude: 5 Latitude: 8 Height: 43
+JetPlane#J1(3) Damn you rain! Longitude: 23 Latitude: 84 Height: 22
+Helicopter#H1(4) OMG, again fog. Longitude: 693 Latitude: 33 Height: 26
+Helicopter#H2(5) Damn you rain! Longitude: 53 Latitude: 33 Height: 12
+Helicopter#H3(6) This is hot. Longitude: 149 Latitude: 68 Height: 90
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 144 Height: 93
+Helicopter#H4(9) This is hot. Longitude: 252 Latitude: 23 Height: 56
+Baloon#B2(2) It's snowing. We're gonna crash. Longitude: 5 Latitude: 8 Height: 28
+JetPlane#J1(3) Let's enjoy the good weather and take some pics. Longitude: 23 Latitude: 94 Height: 24
+Helicopter#H1(4) OMG, again fog. Longitude: 694 Latitude: 33 Height: 26
+Helicopter#H2(5) My rotor is going to freeze! Longitude: 53 Latitude: 33 Height: 0
+Helicopter#H2(5) landing. Longitude: 53 Latitude: 33 Height: 0
+Tower Says: Helicopter#H2(5) unregistered from weather tower.
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 144 Height: 86
+Helicopter#H4(9) My rotor is going to freeze! Longitude: 252 Latitude: 23 Height: 44
+Baloon#B2(2) OMG, again fog. Longitude: 5 Latitude: 8 Height: 25
+JetPlane#J1(3) OMG! Winter is coming! Longitude: 23 Latitude: 94 Height: 17
+Helicopter#H1(4) This is hot. Longitude: 704 Latitude: 33 Height: 28
+Helicopter#H3(6) This is hot. Longitude: 159 Latitude: 68 Height: 92
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 144 Height: 79
+Helicopter#H4(9) OMG, again fog. Longitude: 253 Latitude: 23 Height: 44
+Baloon#B2(2) Damn you rain! You messed up my baloon. Longitude: 5 Latitude: 8 Height: 20
+JetPlane#J1(3) Shut fog. Longitude: 23 Latitude: 95 Height: 17
+Helicopter#H1(4) OMG, again fog. Longitude: 705 Latitude: 33 Height: 28
+Helicopter#H3(6) This is hot. Longitude: 169 Latitude: 68 Height: 94
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 144 Height: 72
+Helicopter#H4(9) This is hot. Longitude: 263 Latitude: 23 Height: 46
+Baloon#B2(2) OMG, again fog. Longitude: 5 Latitude: 8 Height: 17
+JetPlane#J1(3) Damn you rain! Longitude: 23 Latitude: 100 Height: 17
+Helicopter#H1(4) This is hot. Longitude: 715 Latitude: 33 Height: 30
+Helicopter#H3(6) This is hot. Longitude: 179 Latitude: 68 Height: 96
+JetPlane#J2(8) Shut fog. Longitude: 11 Latitude: 145 Height: 72
+Helicopter#H4(9) This is hot. Longitude: 273 Latitude: 23 Height: 48
+Baloon#B2(2) Damn you rain! You messed up my baloon. Longitude: 5 Latitude: 8 Height: 12
+JetPlane#J1(3) Shut fog. Longitude: 23 Latitude: 101 Height: 17
+Helicopter#H1(4) My rotor is going to freeze! Longitude: 715 Latitude: 33 Height: 18
+Helicopter#H3(6) My rotor is going to freeze! Longitude: 179 Latitude: 68 Height: 84
+JetPlane#J2(8) Shut fog. Longitude: 11 Latitude: 146 Height: 72
+Helicopter#H4(9) OMG, again fog. Longitude: 274 Latitude: 23 Height: 48
+Baloon#B2(2) Damn you rain! You messed up my baloon. Longitude: 5 Latitude: 8 Height: 7
+JetPlane#J1(3) Shut fog. Longitude: 23 Latitude: 102 Height: 17
+Helicopter#H1(4) Damn you rain! Longitude: 720 Latitude: 33 Height: 18
+Helicopter#H3(6) My rotor is going to freeze! Longitude: 179 Latitude: 68 Height: 72
+JetPlane#J2(8) Damn you rain! Longitude: 11 Latitude: 151 Height: 72
+Helicopter#H4(9) OMG, again fog. Longitude: 275 Latitude: 23 Height: 48
+Baloon#B2(2) It's snowing. We're gonna crash. Longitude: 5 Latitude: 8 Height: 0
+Baloon#B2(2) landing. Longitude: 5 Latitude: 8 Height: 0
+Tower Says: Baloon#B2(2) unregistered from weather tower.
+Helicopter#H1(4) Damn you rain! Longitude: 725 Latitude: 33 Height: 18
+Helicopter#H3(6) Damn you rain! Longitude: 184 Latitude: 68 Height: 72
+JetPlane#J2(8) Damn you rain! Longitude: 11 Latitude: 156 Height: 72
+Helicopter#H4(9) Damn you rain! Longitude: 280 Latitude: 23 Height: 48
+JetPlane#J1(3) Shut fog. Longitude: 23 Latitude: 103 Height: 17
+Helicopter#H1(4) OMG, again fog. Longitude: 726 Latitude: 33 Height: 18
+Helicopter#H3(6) OMG, again fog. Longitude: 185 Latitude: 68 Height: 72
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 156 Height: 65
+Helicopter#H4(9) My rotor is going to freeze! Longitude: 280 Latitude: 23 Height: 36
+JetPlane#J1(3) Shut fog. Longitude: 23 Latitude: 104 Height: 17
+Helicopter#H1(4) OMG, again fog. Longitude: 727 Latitude: 33 Height: 18
+Helicopter#H3(6) Damn you rain! Longitude: 190 Latitude: 68 Height: 72
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 166 Height: 67
+Helicopter#H4(9) Damn you rain! Longitude: 285 Latitude: 23 Height: 36
+JetPlane#J1(3) OMG! Winter is coming! Longitude: 23 Latitude: 104 Height: 10
+Helicopter#H1(4) OMG, again fog. Longitude: 728 Latitude: 33 Height: 18
+Helicopter#H3(6) Damn you rain! Longitude: 195 Latitude: 68 Height: 72
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 176 Height: 69
+Helicopter#H4(9) My rotor is going to freeze! Longitude: 285 Latitude: 23 Height: 24
+JetPlane#J1(3) OMG! Winter is coming! Longitude: 23 Latitude: 104 Height: 3
+Helicopter#H1(4) My rotor is going to freeze! Longitude: 728 Latitude: 33 Height: 6
+Helicopter#H3(6) My rotor is going to freeze! Longitude: 195 Latitude: 68 Height: 60
+JetPlane#J2(8) Shut fog. Longitude: 11 Latitude: 177 Height: 69
+Helicopter#H4(9) OMG, again fog. Longitude: 286 Latitude: 23 Height: 24
+JetPlane#J1(3) Shut fog. Longitude: 23 Latitude: 105 Height: 3
+Helicopter#H1(4) My rotor is going to freeze! Longitude: 728 Latitude: 33 Height: 0
+Helicopter#H1(4) landing. Longitude: 728 Latitude: 33 Height: 0
+Tower Says: Helicopter#H1(4) unregistered from weather tower.
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 187 Height: 71
+Helicopter#H4(9) Damn you rain! Longitude: 291 Latitude: 23 Height: 24
+JetPlane#J1(3) OMG! Winter is coming! Longitude: 23 Latitude: 105 Height: 0
+JetPlane#J1(3) landing. Longitude: 23 Latitude: 105 Height: 0
+Tower Says: JetPlane#J1(3) unregistered from weather tower.
+JetPlane#J2(8) Let's enjoy the good weather and take some pics. Longitude: 11 Latitude: 197 Height: 73
+Helicopter#H4(9) Damn you rain! Longitude: 296 Latitude: 23 Height: 24
+Helicopter#H3(6) OMG, again fog. Longitude: 196 Latitude: 68 Height: 60
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 197 Height: 66
+Helicopter#H4(9) This is hot. Longitude: 306 Latitude: 23 Height: 26
+Helicopter#H3(6) This is hot. Longitude: 206 Latitude: 68 Height: 62
+JetPlane#J2(8) OMG! Winter is coming! Longitude: 11 Latitude: 197 Height: 59
+Helicopter#H4(9) This is hot. Longitude: 316 Latitude: 23 Height: 28
+Helicopter#H3(6) My rotor is going to freeze! Longitude: 206 Latitude: 68 Height: 50
+JetPlane#J2(8) Shut fog. Longitude: 11 Latitude: 198 Height: 59
+Helicopter#H4(9) OMG, again fog. Longitude: 317 Latitude: 23 Height: 28
+Helicopter#H3(6) This is hot. Longitude: 216 Latitude: 68 Height: 52
+JetPlane#J2(8) Damn you rain! Longitude: 11 Latitude: 203 Height: 59
+Helicopter#H4(9) Damn you rain! Longitude: 322 Latitude: 23 Height: 28

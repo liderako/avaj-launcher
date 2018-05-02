@@ -20,9 +20,9 @@ public class WeatherProvider {
 		int n = coordinater.getLatitude();
 		int f = coordinater.getHeight();
 
-		int a1 = (int)(Math.random() * x + 1);
-		int a2 = (int)(Math.random() * n + 2);
-		int a3 = (int)(Math.random() * f + 3);
+		int a1 = (int)(Math.random() * x + 15);
+		int a2 = (int)(Math.random() * n + 20);
+		int a3 = (int)(Math.random() * f + 35);
 		return (weather[(a1 + a2 + a3)% 4]);
 	}
 }

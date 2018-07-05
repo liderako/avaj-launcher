@@ -5,15 +5,6 @@ public class FileManager {
 	private String fileName;
 	private static FileWriter writer;
 
-	// public FileManager(String fileName) {
-	// 	this.fileName = fileName;
-	// 	try {
-	// 		createWriter();
-	// 	} catch(IOException e) {
-	// 		return ;
-	// 	}
-	// }
-
 	public FileManager() {
 		this.fileName = "simulation.txt";
 		try {
